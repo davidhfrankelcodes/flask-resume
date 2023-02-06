@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume</title>
+</head>
+<body>
+    <h1>Resume</h1>
+    <p><strong>Name:</strong> {{ resume_data['name'] }}</p>
+    <p><strong>Email:</strong> {{ resume_data['email'] }}</p>
+    <h2>Education</h2>
+    {% for entry in resume_data['education'] %}
+        <p>
+            <strong>Degree:</strong> {{ entry['degree'] }}<br>
+            <strong>Institution:</strong> {{ entry['institution'] }}<br>
+            <strong>Location:</strong> {{ entry['location'] }}<br>
+            <strong>Graduated:</strong> {{ entry['graduated'] }}
+        </p>
+    {% endfor %}
+    <h2>Experience</h2>
+    {% for entry in resume_data['experience'] %}
+        <p>
+            <strong>Title:</strong> {{ entry['title'] }}<br>
+            <strong>Company:</strong> {{ entry['company'] }}<br>
+            <strong>Location:</strong> {{ entry['location'] }}<br>
+            <strong>Dates:</strong> {{ entry['dates'] }}
+        </p>
+    {% endfor %}
+    <h2>Skills</h2>
+    <ul>
+        {% for skill in resume_data['skills'] %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,21 @@
+name: John Doe
+email: john.doe@example.com
+education:
+  - degree: Bachelor of Science in Computer Science
+    institution: University of Example
+    location: Example, USA
+    graduated: May 2022
+experience:
+  - title: Manger
+    company: ACME Inc
+    location: Example, USA
+    dates: June 2022 - Present
+  - title: Software Engineer
+    company: ACME Inc
+    location: Example, USA
+    dates: June 2020 - June 2022
+skills:
+  - Python
+  - Flask
+  - Git
+  - JavaScript
