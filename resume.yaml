@@ -1,12 +1,16 @@
 name: John Doe
 email: john.doe@example.com
 education:
-  - degree: Bachelor of Science in Computer Science
+  - degree: Master of Science in Computer Science
     institution: University of Example
     location: Example, USA
     graduated: May 2022
+  - degree: Bachelor of Science in Computer Science
+    institution: University of Example
+    location: Example, USA
+    graduated: May 2020
 experience:
-  - title: Manger
+  - title: Manager
     company: ACME Inc
     location: Example, USA
     dates: June 2022 - Present
@@ -14,8 +18,12 @@ experience:
     company: ACME Inc
     location: Example, USA
     dates: June 2020 - June 2022
+  - title: Janitor
+    company: ACME Inc
+    location: Example, USA
+    dates: June 2018 - June 2020
 skills:
   - Python
   - Flask
   - Git
-  - JavaScript
+  - AWS

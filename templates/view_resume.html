@@ -2,34 +2,60 @@
 <html>
 <head>
     <title>Resume</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/logo.png') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Resume</h1>
-    <p><strong>Name:</strong> {{ resume_data['name'] }}</p>
-    <p><strong>Email:</strong> {{ resume_data['email'] }}</p>
-    <h2>Education</h2>
-    {% for entry in resume_data['education'] %}
-        <p>
-            <strong>Degree:</strong> {{ entry['degree'] }}<br>
-            <strong>Institution:</strong> {{ entry['institution'] }}<br>
-            <strong>Location:</strong> {{ entry['location'] }}<br>
-            <strong>Graduated:</strong> {{ entry['graduated'] }}
-        </p>
-    {% endfor %}
-    <h2>Experience</h2>
-    {% for entry in resume_data['experience'] %}
-        <p>
-            <strong>Title:</strong> {{ entry['title'] }}<br>
-            <strong>Company:</strong> {{ entry['company'] }}<br>
-            <strong>Location:</strong> {{ entry['location'] }}<br>
-            <strong>Dates:</strong> {{ entry['dates'] }}
-        </p>
-    {% endfor %}
-    <h2>Skills</h2>
-    <ul>
-        {% for skill in resume_data['skills'] %}
-            <li>{{ skill }}</li>
-        {% endfor %}
-    </ul>
+    <div class="container mt-5">
+        <h1 class="text-center">Resume</h1>
+        <div class="row mt-5">
+            <div class="col-sm-6">
+                <p><strong>Name:</strong> {{ resume_data['name'] }}</p>
+                <p><strong>Email:</strong> {{ resume_data['email'] }}</p>
+            </div>
+        </div>
+        <hr>
+        <h2>Education</h2>
+        <div class="row mt-3">
+            {% for entry in resume_data['education'] %}
+                <div class="col-sm-6">
+                    <p>
+                        <strong>Degree:</strong> {{ entry['degree'] }}<br>
+                        <strong>Institution:</strong> {{ entry['institution'] }}<br>
+                        <strong>Location:</strong> {{ entry['location'] }}<br>
+                        <strong>Graduated:</strong> {{ entry['graduated'] }}
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+        <hr>
+        <h2>Experience</h2>
+        <div class="row mt-3">
+            {% for entry in resume_data['experience'] %}
+                <div class="col-sm-6">
+                    <p>
+                        <strong>Title:</strong> {{ entry['title'] }}<br>
+                        <strong>Company:</strong> {{ entry['company'] }}<br>
+                        <strong>Location:</strong> {{ entry['location'] }}<br>
+                        <strong>Dates:</strong> {{ entry['dates'] }}
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+        <hr>
+        <h2>Skills</h2>
+        <div class="row mt-3">
+            <div class="col-sm-6">
+                <ul>
+                    {% for skill in resume_data['skills'] %}
+                        <li>{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
