@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header .contact-info {
+    text-align: right;
+}
+
+.header .contact-info p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-list .skill {
+    width: 50%;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.work-experience .job {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 30px;
+}
+
+.work-experience .job .details {
+    margin-left: 20px;
+}
+
+.work-experience .job h4 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.work-experience .job p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.education .degree {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 30px;
+}
+
+.education .degree .details {
+    margin-left: 20px;
+}
+
+.education .degree h4 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.education .degree p {
+    margin: 0;
+    font-size: 16px;
+}
+
